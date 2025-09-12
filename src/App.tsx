@@ -32,7 +32,6 @@ function App() {
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <button onClick={() => scrollToSection('hero')} className="text-gray-300 hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</button>
                 <button onClick={() => scrollToSection('hero')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</button>
                 <button onClick={() => scrollToSection('location')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Location</button>
                 <button onClick={() => scrollToSection('schedule')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</button>
@@ -81,7 +80,7 @@ function App() {
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <div className="mb-8">
             <img 
-              src="https://images.pexels.com/photos/8611192/pexels-photo-8611192.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+              src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/545813076_1799170757384368_3722058886634288936_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=l_R85GiUNnEQ7kNvwHDW37i&_nc_oc=Adl8kBGr6vWbDuGn3-zbunvTI4Jno5-2larOsfwz4x7Ptrqhrlz12pePG_tHVxsSOPM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QH0caOuMRNtLfOMFr_WP_7x3JET1C2WYtHVDkmqa-zdLA&oe=68EB13F9" 
               alt="Warrior Spirit Taekwondo Club Logo" 
               className="w-32 h-32 mx-auto rounded-full shadow-2xl border-4 border-white/20"
             />
