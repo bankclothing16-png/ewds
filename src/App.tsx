@@ -1,0 +1,471 @@
+import React, { useState } from 'react';
+import { MapPin, Clock, Phone, Star, Menu, X, ChevronDown } from 'lucide-react';
+
+function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-red-600/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/545813076_1799170757384368_3722058886634288936_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=l_R85GiUNnEQ7kNvwHDW37i&_nc_oc=Adl8kBGr6vWbDuGn3-zbunvTI4Jno5-2larOsfwz4x7Ptrqhrlz12pePG_tHVxsSOPM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QH0caOuMRNtLfOMFr_WP_7x3JET1C2WYtHVDkmqa-zdLA&oe=68EB13F9" 
+                  alt="Warrior Spirit Taekwondo Club Logo" 
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <span className="text-white font-bold text-xl">
+                  Warrior Spirit TKD
+                </span>
+              </div>
+            </div>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:block">
+              <div className="ml-10 flex items-baseline space-x-4">
+                <button onClick={() => scrollToSection('hero')} className="text-gray-300 hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</button>
+                <button onClick={() => scrollToSection('hero')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</button>
+                <button onClick={() => scrollToSection('location')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Location</button>
+                <button onClick={() => scrollToSection('schedule')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</button>
+                <button onClick={() => scrollToSection('coach')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Coach</button>
+                <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</button>
+              </div>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-gray-400 hover:text-white focus:outline-none focus:text-white"
+              >
+                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/95">
+              <button onClick={() => scrollToSection('hero')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Home</button>
+              <button onClick={() => scrollToSection('location')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Location</button>
+              <button onClick={() => scrollToSection('schedule')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Schedule</button>
+              <button onClick={() => scrollToSection('coach')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Coach</button>
+              <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Contact</button>
+            </div>
+          </div>
+        )}
+      </nav>
+
+      {/* Hero Section */}
+      <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-900 via-gray-900 to-red-900 overflow-hidden">
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-32 h-32 border-2 border-green-500 rotate-45"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 border-2 border-white rotate-12"></div>
+          <div className="absolute bottom-32 left-1/4 w-20 h-20 border-2 border-green-400 -rotate-12"></div>
+        </div>
+
+        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="mb-8">
+            <img 
+              src="https://images.pexels.com/photos/8611192/pexels-photo-8611192.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+              alt="Warrior Spirit Taekwondo Club Logo" 
+              className="w-32 h-32 mx-auto rounded-full shadow-2xl border-4 border-white/20"
+            />
+          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-green-400 to-red-600 bg-clip-text text-transparent">
+              Warrior Spirit
+            </span>
+            <br />
+            <span className="text-white">Taekwondo Club</span>
+          </h1>
+          
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Master the art of Taekwondo with discipline, strength, and honor
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="px-8 py-4 bg-gradient-to-r from-green-600 to-red-600 text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 hover:from-green-700 hover:to-red-700"
+            >
+              Join Classes
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="px-8 py-4 border-2 border-green-500 text-green-400 font-semibold rounded-lg hover:bg-green-500 hover:text-white transition-all duration-300"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <ChevronDown className="text-green-400" size={32} />
+        </div>
+      </section>
+
+      {/* Classes Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Train with <span className="bg-gradient-to-r from-green-600 to-red-600 bg-clip-text text-transparent">Purpose</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Our comprehensive Taekwondo programs are designed for all skill levels, from beginners to advanced practitioners
+            </p>
+            
+            {/* Student Photos */}
+            <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/545776278_1333434621714777_1524229387051483626_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=kGFszMlHtFQQ7kNvwHQSX_f&_nc_oc=AdmWqJtQnQi8GsKCtniODsOziA1yk8lzuC4kJxV2Mj0o9xj4Ct4-0MfSVyUIXhVkDvc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QE7Q4v5bJfBcFjrPOrCWWfaAEohOFQb7mA9pDokbh-4Nw&oe=68EB2BB8" 
+                  alt="Warrior Spirit Taekwondo Students Training" 
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="font-semibold">Our Dedicated Students</h3>
+                  <p className="text-sm text-gray-200">Training with passion and discipline</p>
+                </div>
+              </div>
+              
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/546700167_769476035831420_8655265697408261672_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=QYgBqRNE5UcQ7kNvwFJQRJn&_nc_oc=Adl8ZU7beWxLXUY2jsMUdAVbN4HEUL3l6nEzdWR9Bilz6UgPtfNacNCA4G57mzIVO-s&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QFfEC0mojtdriysn7r5Odf-gJV7-pelMnwGc9ofmdQliw&oe=68EB12BC" 
+                  alt="Warrior Spirit Taekwondo Club Community" 
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="font-semibold">Strong Community</h3>
+                  <p className="text-sm text-gray-200">Building friendships through martial arts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-red-600 rounded-full flex items-center justify-center mb-6">
+                <Star className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Beginner Classes</h3>
+              <p className="text-gray-600">Perfect for those new to Taekwondo. Learn basic techniques, forms, and philosophy.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-red-600 rounded-full flex items-center justify-center mb-6">
+                <Star className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Advanced Training</h3>
+              <p className="text-gray-600">Intensive training for experienced practitioners focusing on competition preparation.</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-red-600 rounded-full flex items-center justify-center mb-6">
+                <Star className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Kids Classes</h3>
+              <p className="text-gray-600">Fun and engaging classes designed specifically for young martial artists.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location Section */}
+      <section id="location" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Visit Our <span className="bg-gradient-to-r from-green-600 to-red-600 bg-clip-text text-transparent">Dojang</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin className="text-white" size={20} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Our Location</h3>
+                  <p className="text-gray-600 text-lg">THE ECA HEAVEN</p>
+                  <p className="text-gray-600">P9X4+GJW, Budhanilkantha</p>
+                  <p className="text-gray-600">Kathmandu 44600</p>
+                </div>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl shadow-lg">
+                <h4 className="font-semibold text-gray-900 mb-3">Easy to Find</h4>
+                <p className="text-gray-600">
+                  Located in the heart of Budhanilkantha, our dojang is easily accessible by public transport and has ample parking space for your convenience.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-green-600 to-red-600 p-8 rounded-xl text-white">
+              <h3 className="text-2xl font-bold mb-6">Ready to Start Your Journey?</h3>
+              <p className="mb-6 text-red-100">
+                Come visit us and experience our welcoming dojang environment. First class is always free for new students!
+              </p>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Schedule a Visit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Schedule Section */}
+      <section id="schedule" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Training <span className="bg-gradient-to-r from-green-600 to-red-600 bg-clip-text text-transparent">Schedule</span>
+            </h2>
+            <p className="text-lg text-gray-600">Find the perfect time that fits your schedule</p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-gradient-to-r from-green-600 to-red-600 p-8 rounded-xl shadow-xl">
+              <div className="flex items-center justify-center mb-8">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                  <Clock className="text-white" size={24} />
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-white">Sunday - Thursday</span>
+                    <span className="text-red-100">5:00 AM - 8:00 PM</span>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-white">Friday</span>
+                    <span className="text-red-100">5:00 AM - 8:00 PM</span>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-white">Saturday</span>
+                    <span className="text-red-100 font-semibold">CLOSED</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-red-100 mb-4">Multiple class times available throughout the day</p>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                >
+                  Get Full Schedule
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coach Section */}
+      <section id="coach" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Meet Your <span className="bg-gradient-to-r from-green-600 to-red-600 bg-clip-text text-transparent">Master</span>
+            </h2>
+            <p className="text-lg text-gray-600">Learn from experienced and dedicated instructors</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-1/3 p-8 flex items-center justify-center bg-gradient-to-br from-green-600 to-red-600">
+                  <img 
+                    src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/541952548_2547648175607133_3735880938668504109_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=EAe3SJr904YQ7kNvwHgzaww&_nc_oc=AdlSznHDAiT_a1BHYOMqP-JXIhvmVMZIcQh7c-F8UqbCBo7Fcws50yDZUv6CNvX9bes&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QGBO8mo3RVWBOnbkmDyoCMIZE6FWBhu7brplolCKN5ajQ&oe=68EB083E" 
+                    alt="Master Ramsharan Guru" 
+                    className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
+                  />
+                </div>
+                
+                <div className="md:w-2/3 p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Master Ramsharan Guru</h3>
+                  <p className="text-green-700 font-semibold mb-4">Head Instructor & Founder</p>
+                  
+                  <div className="space-y-4 text-gray-600">
+                    <p>
+                      Master Ramsharan Guru brings over 15 years of dedicated experience in Taekwondo instruction and practice. 
+                      His journey in martial arts began in his youth, and he has since earned multiple black belt degrees and 
+                      certifications from international Taekwondo federations.
+                    </p>
+                    
+                    <p>
+                      Known for his patient teaching style and deep understanding of Taekwondo philosophy, Master Guru has 
+                      successfully trained hundreds of students, from young children taking their first steps in martial arts 
+                      to competitive athletes representing Nepal in international tournaments.
+                    </p>
+                    
+                    <div className="grid md:grid-cols-2 gap-4 mt-6">
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900">Specializations</h4>
+                        <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                          <li>• Traditional Taekwondo Forms</li>
+                          <li>• Competition Training</li>
+                          <li>• Self-Defense Techniques</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900">Achievements</h4>
+                        <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                          <li>• 5th Dan Black Belt</li>
+                          <li>• Certified International Instructor</li>
+                          <li>• 15+ Years Teaching Experience</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-gradient-to-br from-black via-gray-900 to-green-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Get In <span className="bg-gradient-to-r from-green-400 to-red-600 bg-clip-text text-transparent">Touch</span>
+            </h2>
+            <p className="text-lg text-gray-300">Ready to begin your Taekwondo journey? Contact us today!</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-8">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-red-600 rounded-full flex items-center justify-center">
+                  <Phone className="text-white" size={20} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">Call Us</h3>
+                  <p className="text-gray-300">970-6418555</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-red-600 rounded-full flex items-center justify-center">
+                  <MapPin className="text-white" size={20} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">Visit Us</h3>
+                  <p className="text-gray-300">THE ECA HEAVEN</p>
+                  <p className="text-gray-300">P9X4+GJW, Budhanilkantha, Kathmandu 44600</p>
+                </div>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-white mb-4">Why Choose Us?</h3>
+                <ul className="space-y-2 text-gray-300">
+                  <li>✓ Experienced and certified instructors</li>
+                  <li>✓ Small class sizes for personalized attention</li>
+                  <li>✓ Safe and supportive learning environment</li>
+                  <li>✓ Flexible scheduling options</li>
+                  <li>✓ Free trial class for new students</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center">
+              <h3 className="text-2xl font-bold text-white mb-6">Ready to Start Your Journey?</h3>
+              <p className="text-gray-300 mb-6">
+                Join our martial arts family and discover the warrior spirit within you. 
+                Contact us today to begin your Taekwondo training!
+              </p>
+              <button
+                onClick={() => window.open('tel:970-6418555', '_self')}
+                className="bg-gradient-to-r from-green-600 to-red-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 hover:from-green-700 hover:to-red-700"
+              >
+                Call Now: 970-6418555
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                <div className="flex items-center space-x-2">
+                  <img 
+                    src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/545813076_1799170757384368_3722058886634288936_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=l_R85GiUNnEQ7kNvwHDW37i&_nc_oc=Adl8kBGr6vWbDuGn3-zbunvTI4Jno5-2larOsfwz4x7Ptrqhrlz12pePG_tHVxsSOPM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QH0caOuMRNtLfOMFr_WP_7x3JET1C2WYtHVDkmqa-zdLA&oe=68EB13F9" 
+                    alt="Logo" 
+                    className="w-8 h-8 rounded-full"
+                  />
+                  <span>Warrior Spirit Taekwondo Club</span>
+                </div>
+              </h3>
+              <p className="text-gray-400">
+                Empowering students through the art of Taekwondo with discipline, respect, and excellence.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><button onClick={() => scrollToSection('hero')} className="hover:text-green-400 transition-colors">Home</button></li>
+                <li><button onClick={() => scrollToSection('location')} className="hover:text-green-400 transition-colors">Location</button></li>
+                <li><button onClick={() => scrollToSection('schedule')} className="hover:text-green-400 transition-colors">Schedule</button></li>
+                <li><button onClick={() => scrollToSection('contact')} className="hover:text-green-400 transition-colors">Contact</button></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+              <div className="space-y-2 text-gray-400">
+                <p>📞 970-6418555</p>
+                <p>📍 THE ECA HEAVEN</p>
+                <p>Budhanilkantha, Kathmandu 44600</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+            <p className="text-gray-400">
+              © 2025 Warrior Spirit Taekwondo Club. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
