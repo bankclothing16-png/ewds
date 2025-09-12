@@ -317,7 +317,7 @@ function App() {
                   
                   <div className="space-y-4 text-gray-600">
                     <p>
-                      Master Ramsharan Guru brings over 15 years of dedicated experience in Taekwondo instruction and practice. 
+                      Master Ramsharan Guru brings over 12+ years of dedicated experience in Taekwondo instruction and practice. 
                       His journey in martial arts began in his youth, and he has since earned multiple black belt degrees and 
                       certifications from international Taekwondo federations.
                     </p>
@@ -341,9 +341,9 @@ function App() {
                       <div className="bg-gray-50 p-4 rounded-lg">
                         <h4 className="font-semibold text-gray-900">Achievements</h4>
                         <ul className="text-sm text-gray-600 mt-2 space-y-1">
-                          <li>• 5th Dan Black Belt</li>
+                          <li>• 4th Dan Black Belt</li>
                           <li>• Certified International Instructor</li>
-                          <li>• 15+ Years Teaching Experience</li>
+                          <li>• 12+ Years Teaching Experience</li>
                         </ul>
                       </div>
                     </div>
