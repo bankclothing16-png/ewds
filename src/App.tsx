@@ -328,6 +328,13 @@ function App() {
                       to competitive athletes representing Nepal in international tournaments.
                     </p>
                     
+                    <p>
+                      Throughout his distinguished career, Master Guru has worked with several of the most renowned schools, 
+                      producing over 300 Black Belts, 100+ Second Dans, and 30+ Third Dans, while teaching 500+ students daily. 
+                      His dedication to excellence and systematic approach to training has established him as one of Nepal's 
+                      most respected Taekwondo instructors.
+                    </p>
+                    
                     <div className="grid md:grid-cols-2 gap-4 mt-6">
                       <div className="bg-gray-50 p-4 rounded-lg">
                         <h4 className="font-semibold text-gray-900">Specializations</h4>
