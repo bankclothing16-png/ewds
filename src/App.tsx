@@ -82,7 +82,7 @@ function App() {
             <img 
               src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/545813076_1799170757384368_3722058886634288936_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=l_R85GiUNnEQ7kNvwHDW37i&_nc_oc=Adl8kBGr6vWbDuGn3-zbunvTI4Jno5-2larOsfwz4x7Ptrqhrlz12pePG_tHVxsSOPM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QH0caOuMRNtLfOMFr_WP_7x3JET1C2WYtHVDkmqa-zdLA&oe=68EB13F9" 
               alt="Warrior Spirit Taekwondo Club Logo" 
-              className="w-32 h-32 mx-auto rounded-full shadow-2xl border-4 border-white/20"
+              className="w-40 h-40 mx-auto object-contain shadow-2xl border-4 border-white/20 rounded-lg bg-white/10 p-2"
             />
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
