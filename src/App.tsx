@@ -217,7 +217,7 @@ function App() {
               <div className="bg-white p-6 rounded-xl shadow-lg">
                 <h4 className="font-semibold text-gray-900 mb-3">Easy to Find</h4>
                 <p className="text-gray-600">
-                  Located in the heart of Budhanilkantha, our dojang is easily accessible by public transport and has ample parking space for your convenience.
+                  Located in the heart of Budhanilkantha, our club is easily accessible by public transport and has ample parking space for your convenience.
                 </p>
               </div>
             </div>
