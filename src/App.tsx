@@ -295,6 +295,76 @@ function App() {
 
       {/* Coach Section */}
       <section id="coach" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Meet Your <span className="bg-gradient-to-r from-green-600 to-red-600 bg-clip-text text-transparent">Master</span>
+            </h2>
+            <p className="text-lg text-gray-600">Learn from experienced and dedicated instructors</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-1/3 p-8 flex items-center justify-center bg-gradient-to-br from-green-600 to-red-600">
+                  <img 
+                    src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/541952548_2547648175607133_3735880938668504109_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=EAe3SJr904YQ7kNvwHgzaww&_nc_oc=AdlSznHDAiT_a1BHYOMqP-JXIhvmVMZIcQh7c-F8UqbCBo7Fcws50yDZUv6CNvX9bes&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QGBO8mo3RVWBOnbkmDyoCMIZE6FWBhu7brplolCKN5ajQ&oe=68EB083E" 
+                    alt="Master Ramsharan Guru" 
+                    className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
+                  />
+                </div>
+                
+                <div className="md:w-2/3 p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Master Ramsharan Guru</h3>
+                  <p className="text-green-700 font-semibold mb-4">Head Instructor & Founder</p>
+                  
+                  <div className="space-y-4 text-gray-600">
+                    <p>
+                      Master Ramsharan Guru brings over 12+ years of dedicated experience in Taekwondo instruction and practice. 
+                      His journey in martial arts began in his youth, and he has since earned multiple black belt degrees and 
+                      certifications from international Taekwondo federations.
+                    </p>
+                    
+                    <p>
+                      Known for his patient teaching style and deep understanding of Taekwondo philosophy, Master Guru has 
+                      successfully trained hundreds of students, from young children taking their first steps in martial arts 
+                      to competitive athletes representing Nepal in international tournaments.
+                    </p>
+                    
+                    <p>
+                      Throughout his distinguished career, Master Guru has worked with several of the most renowned schools, 
+                      producing over 300 Black Belts, 100+ Second Dans, and 30+ Third Dans, while teaching 500+ students daily. 
+                      His dedication to excellence and systematic approach to training has established him as one of Nepal's 
+                      most respected Taekwondo instructors.
+                    </p>
+                    
+                    <div className="grid md:grid-cols-2 gap-4 mt-6">
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900">Specializations</h4>
+                        <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                          <li>• Traditional Taekwondo Forms</li>
+                          <li>• Competition Training</li>
+                          <li>• Self-Defense Techniques</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-gray-900">Achievements</h4>
+                        <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                          <li>• 4th Dan Black Belt</li>
+                          <li>• Certified International Instructor</li>
+                          <li>• 12+ Years Teaching Experience</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section id="gallery" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -395,77 +465,6 @@ function App() {
         </div>
       </section>
 
-      {/* Coach Section */}
-      <section id="coach" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Meet Your <span className="bg-gradient-to-r from-green-600 to-red-600 bg-clip-text text-transparent">Master</span>
-            </h2>
-            <p className="text-lg text-gray-600">Learn from experienced and dedicated instructors</p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <div className="md:flex">
-                <div className="md:w-1/3 p-8 flex items-center justify-center bg-gradient-to-br from-green-600 to-red-600">
-                  <img 
-                    src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/541952548_2547648175607133_3735880938668504109_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=EAe3SJr904YQ7kNvwHgzaww&_nc_oc=AdlSznHDAiT_a1BHYOMqP-JXIhvmVMZIcQh7c-F8UqbCBo7Fcws50yDZUv6CNvX9bes&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QGBO8mo3RVWBOnbkmDyoCMIZE6FWBhu7brplolCKN5ajQ&oe=68EB083E" 
-                    alt="Master Ramsharan Guru" 
-                    className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
-                  />
-                </div>
-                
-                <div className="md:w-2/3 p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Master Ramsharan Guru</h3>
-                  <p className="text-green-700 font-semibold mb-4">Head Instructor & Founder</p>
-                  
-                  <div className="space-y-4 text-gray-600">
-                    <p>
-                      Master Ramsharan Guru brings over 12+ years of dedicated experience in Taekwondo instruction and practice. 
-                      His journey in martial arts began in his youth, and he has since earned multiple black belt degrees and 
-                      certifications from international Taekwondo federations.
-                    </p>
-                    
-                    <p>
-                      Known for his patient teaching style and deep understanding of Taekwondo philosophy, Master Guru has 
-                      successfully trained hundreds of students, from young children taking their first steps in martial arts 
-                      to competitive athletes representing Nepal in international tournaments.
-                    </p>
-                    
-                    <p>
-                      Throughout his distinguished career, Master Guru has worked with several of the most renowned schools, 
-                      producing over 300 Black Belts, 100+ Second Dans, and 30+ Third Dans, while teaching 500+ students daily. 
-                      His dedication to excellence and systematic approach to training has established him as one of Nepal's 
-                      most respected Taekwondo instructors.
-                    </p>
-                    
-                    <div className="grid md:grid-cols-2 gap-4 mt-6">
-                      <div className="bg-gray-50 p-4 rounded-lg">
-                        <h4 className="font-semibold text-gray-900">Specializations</h4>
-                        <ul className="text-sm text-gray-600 mt-2 space-y-1">
-                          <li>• Traditional Taekwondo Forms</li>
-                          <li>• Competition Training</li>
-                          <li>• Self-Defense Techniques</li>
-                        </ul>
-                      </div>
-                      
-                      <div className="bg-gray-50 p-4 rounded-lg">
-                        <h4 className="font-semibold text-gray-900">Achievements</h4>
-                        <ul className="text-sm text-gray-600 mt-2 space-y-1">
-                          <li>• 4th Dan Black Belt</li>
-                          <li>• Certified International Instructor</li>
-                          <li>• 12+ Years Teaching Experience</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Fees Structure Section */}
       <section id="fees" className="py-20 bg-gradient-to-br from-gray-900 via-black to-green-900">
