@@ -225,7 +225,7 @@ function App() {
             <div className="bg-gradient-to-r from-green-600 to-red-600 p-8 rounded-xl text-white">
               <h3 className="text-2xl font-bold mb-6">Ready to Start Your Journey?</h3>
               <p className="mb-6 text-red-100">
-                Come visit us and experience our welcoming dojang environment. First class is always free for new students!
+                Come visit us and experience our welcoming club environment. First class is always free for new students!
               </p>
               <button
                 onClick={() => scrollToSection('contact')}
