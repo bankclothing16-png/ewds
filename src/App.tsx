@@ -345,6 +345,71 @@ function App() {
                 <p className="text-sm text-gray-200">Unity and brotherhood</p>
               </div>
             </div>
+
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/496034097_662862939838152_1085059842057941832_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGMbVuqKrHCEF0dF45-Ax3vD3CrjTRowYkPcKuNNGjBiRmKZC8eaHT7uB8-ziaR4okOWmP84H9uFIJwzyQ90nNR&_nc_ohc=SMRr2AfWYY4Q7kNvwFWF4jR&_nc_oc=AdlN5cqQjX1rJp0oUxNtJgl6y_zgREQKgxa5fCEHStzHXbKVOdIWSjlEr2QvDZQ4S48&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=bqxAEpDO17zwwKQHPnFpMA&oh=00_Afa_TR_MuUN2br6FoB-pXwJRPUPFHtzWi3MGSaLljyqxYA&oe=68CB078F" 
+                alt="Warrior Spirit Taekwondo Group Training" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Group Training</h3>
+                <p className="text-sm text-gray-200">Building strength together</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t51.75761-15/491536135_17904714726112995_7358130820592811689_n.webp?stp=dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH3abHWF-pNg9pI4YTEzCjbh2RVIW7X20WHZFUhbtfbRQTJ3MCm_EhL7BF1bTvnv7GotGtNeeF-DrpGWeAFEUZq&_nc_ohc=DJgAO_q7TY0Q7kNvwG3bbin&_nc_oc=Adk-1gGPoxkQ--PsgXi0zKcQaOdPSqDhQt05iT2-vfXOVjyGckA2PqHF0ZyzQH_C7U8&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=7CYfC0JqGTHCtfKI_nFGGw&oh=00_AfZLGxDRTNX1UhaIVDPp5C-uJQh_qWqjd65PmmxZUns2iw&oe=68CB0251" 
+                alt="Warrior Spirit Taekwondo Technique Practice" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Technique Practice</h3>
+                <p className="text-sm text-gray-200">Perfecting martial arts skills</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/518317820_122129356820834928_4502695549870773383_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF3jqmANpTgv4Pzlyzw4YSYz9_om_CFGyvP3-ib8IUbK2uUpBuacUWeYr_eOZLJf-WIfJsu8HeueWUeTz3ehUuh&_nc_ohc=fGhqHPHKBYIQ7kNvwEonQ0q&_nc_oc=Adl8B-1grCjO85RCaBwT7uZew-1ZAExcNOdyMVhaYGV3uc7EYQol-Z_sfzOtkpC6LtE&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=LoG2E7LwuQ92pfW-H4Po-A&oh=00_AfaIMPJfYefKHPBGTAialqaFH3oJwu5VFLHiitNLR57dAQ&oe=68CB0842" 
+                alt="Warrior Spirit Taekwondo Advanced Training" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Advanced Training</h3>
+                <p className="text-sm text-gray-200">Elite level techniques</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/526757935_724533517004427_1443331203524690785_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGX9e3hDkxagr_2-s12EftXAn9YXqbinL8Cf1hepuKcv7m3pcZSrcyVp7LNBRV76sirCbTrZgupHGbIV2Lmf6yb&_nc_ohc=Cd9sEUxZbW8Q7kNvwFiiM-z&_nc_oc=Adma97qjX3bMJ1fK13kuIZW61QHUjGZffd9z1ay5fJg2vJgCF4ETnfhAxcqoEs5Kj0s&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=YfSOH9yUtwmiHpwcCgCpNw&oh=00_AfaR5eYHxhYF7Nez-P_LhpvehynvJ6QWSaghd6akoig0mw&oe=68CB0CE5" 
+                alt="Warrior Spirit Taekwondo Community Event" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Community Event</h3>
+                <p className="text-sm text-gray-200">Celebrating achievements</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/528159136_727740480017064_1494061523669511963_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHryeh42A-DVm9SQzKNBdL4_cDfQw6n0_79wN9DDqfT_i3i1lfQWdsGk68byP3xInu0oqK84u31AGDxlMqGl1Ls&_nc_ohc=7QWzz9BwQCcQ7kNvwEzTHLB&_nc_oc=AdleC39tmivN41D3HJ4_qYbj7MLxFg9Ckj8FqqaJDf1SC3s9Bz4CTBJHs8nyFRrbuRE&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=aVbPxBlYUUS9l7sGAL9ung&oh=00_AfZN7hxNXF7I6IkFZp57PS8j06HHOP0KJ1ov17taXxqwXg&oe=68CB0755" 
+                alt="Warrior Spirit Taekwondo Outdoor Training" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Outdoor Training</h3>
+                <p className="text-sm text-gray-200">Training in nature</p>
+              </div>
+            </div>
           </div>
 
           {/* Social Media Section */}
