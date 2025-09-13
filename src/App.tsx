@@ -730,6 +730,7 @@ function App() {
                 <li><button onClick={() => scrollToSection('location')} className="hover:text-green-400 transition-colors">Location</button></li>
                 <li><button onClick={() => scrollToSection('schedule')} className="hover:text-green-400 transition-colors">Schedule</button></li>
                 <li><button onClick={() => scrollToSection('fees')} className="hover:text-green-400 transition-colors">Fees</button></li>
+                <li><button onClick={() => scrollToSection('gallery')} className="hover:text-green-400 transition-colors">Gallery</button></li>
                 <li><button onClick={() => scrollToSection('contact')} className="hover:text-green-400 transition-colors">Contact</button></li>
               </ul>
             </div>
