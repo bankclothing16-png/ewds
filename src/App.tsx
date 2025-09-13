@@ -420,8 +420,8 @@ function App() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="font-semibold">Championship Victory</h3>
-                <p className="text-sm text-gray-200">Championship Victory</p>
+                <h3 className="font-semibold">Celebrating birthday</h3>
+                <p className="text-sm text-gray-200">Cutting cakes inside club</p>
               </div>
             </div>
 
@@ -434,8 +434,8 @@ function App() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="font-semibold">Sparring Practice</h3>
-                <p className="text-sm text-gray-200">Sparring Practice</p>
+                <h3 className="font-semibold">Refree in a national game</h3>
+                <p className="text-sm text-gray-200">Sparring match</p>
               </div>
             </div>
 
