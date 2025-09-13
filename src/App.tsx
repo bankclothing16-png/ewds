@@ -638,6 +638,38 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* QR Code Payment Section */}
+          <div className="mt-12 text-center">
+            <div className="bg-gradient-to-r from-green-600 to-red-600 rounded-2xl p-8 max-w-md mx-auto">
+              <h4 className="text-2xl font-bold text-white mb-4">📱 Quick Payment</h4>
+              <p className="text-red-100 mb-6">Scan QR Code for instant payment via Phone Pay</p>
+              
+              <div className="bg-white rounded-xl p-4 mb-6 inline-block shadow-2xl">
+                <img 
+                  src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.15752-9/548683562_1435929630804945_2547115220267373643_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=PA-SAJaJDHAQ7kNvwGW3-Kw&_nc_oc=AdlBCZnTyJaSdOWGqrNRRRoKRGswJkO2JrsYS3XVn0SVXLdOy6t9avi0WD3BRRHJf_s&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&oh=03_Q7cD3QG5zjeoFrwgLKH0OKdu_kmO1FNTfkTISM5ON1QWpw4zuQ&oe=68EC7839" 
+                  alt="Phone Pay QR Code for Warrior Spirit Taekwondo Club" 
+                  className="w-48 h-48 object-contain mx-auto"
+                />
+              </div>
+              
+              <div className="space-y-2 text-red-100">
+                <p className="font-semibold">How to Pay:</p>
+                <div className="text-sm space-y-1">
+                  <p>1. Open your Phone Pay app</p>
+                  <p>2. Scan the QR code above</p>
+                  <p>3. Enter the payment amount</p>
+                  <p>4. Complete the transaction</p>
+                </div>
+              </div>
+              
+              <div className="mt-6 bg-white/20 rounded-lg p-3">
+                <p className="text-white font-semibold text-sm">
+                  💡 After payment, please contact us at 970-6418555 to confirm your enrollment
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
