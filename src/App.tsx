@@ -36,6 +36,7 @@ function App() {
                 <button onClick={() => scrollToSection('location')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Location</button>
                 <button onClick={() => scrollToSection('schedule')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</button>
                 <button onClick={() => scrollToSection('fees')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Fees</button>
+                <button onClick={() => scrollToSection('gallery')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</button>
                 <button onClick={() => scrollToSection('coach')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Coach</button>
                 <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</button>
               </div>
@@ -61,6 +62,7 @@ function App() {
               <button onClick={() => scrollToSection('location')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Location</button>
               <button onClick={() => scrollToSection('schedule')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Schedule</button>
               <button onClick={() => scrollToSection('fees')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Fees</button>
+              <button onClick={() => scrollToSection('gallery')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Gallery</button>
               <button onClick={() => scrollToSection('coach')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Coach</button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Contact</button>
             </div>
@@ -286,6 +288,108 @@ function App() {
                   Get Full Schedule
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coach Section */}
+      <section id="coach" className="py-20 bg-gray-50">
+      {/* Gallery Section */}
+      <section id="gallery" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our <span className="bg-gradient-to-r from-green-600 to-red-600 bg-clip-text text-transparent">Gallery</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Witness the dedication, skill, and warrior spirit of our students in action
+            </p>
+          </div>
+
+          {/* Photo Gallery Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/536280030_742069328584179_6719963686898336481_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHb3EcR2YEEY3s4W2OanjAXsE67N1crg-iwTrs3VyuD6ADBI5iPMX4lcYvdiLQ4OCX3Cnk_BQquFD7hFtUA-et_&_nc_ohc=FIksPFxGHDcQ7kNvwHzu07f&_nc_oc=Admrr8AXPYw39pIXlQdhAJTNY7PlV_5H_VGpp3ras1bK0F3mgyD3wWIlPNVSykyGFoQ&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=YYZeM7eXE99TxcUgvwHejQ&oh=00_AfY0_UlguMJXKWoXIbCL4RlQtNCt-9N6DSJP4QQKBpgDPw&oe=68CADA8F" 
+                alt="Warrior Spirit Taekwondo Training Session" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Training Excellence</h3>
+                <p className="text-sm text-gray-200">Students mastering techniques</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/504538182_682463807878065_4535806858416573174_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFudGAR92PTPr06ALWQn39xpk-dPoRmyyumT50-hGbLK2Iml2stwHf9mJgYPWf-N8REg2R0xJ7HovKN71c68b1s&_nc_ohc=tptJGUBk6b4Q7kNvwHH8D9U&_nc_oc=AdnUfzJ3flYfuandni6mr08siSF7ILkzeorQyuXxVekXtMG98hsrj6s8-ZEEz_tZQXA&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=Wjiy2J5zU_KQA8wruyaPIA&oh=00_AfZ4C-EW2XZaqU-GDJPCF7ZkbyRWm22C0EYyEcc3E9uz9A&oe=68CAF045" 
+                alt="Warrior Spirit Taekwondo Competition" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Competition Ready</h3>
+                <p className="text-sm text-gray-200">Athletes in action</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 md:col-span-2 lg:col-span-1">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/496071391_662861863171593_5478058344049546526_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH8wydmUX-VTKbCqTpEaCLUso6_HK7NvGeyjr8crs28Z1Fk676F8R5rv-Qw0UL8rDKGwMop2DZ_WGz7vx2_Rrao&_nc_ohc=qQtl5B_syhwQ7kNvwGbfpqj&_nc_oc=Adn4YGUHBEWj93HSj07hh5DgW8Z8mfjU-XvQhaf7-zaWPdhsLm5lOB-3re_AKl8LXaM&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=Uep5brxVfioQOib4W2c9tg&oh=00_AfYuJ38qQupd5ilgARoFPiqe_HQOP_lph6DVFXAnLWLtfg&oe=68CAE2CA" 
+                alt="Warrior Spirit Taekwondo Team Spirit" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Team Spirit</h3>
+                <p className="text-sm text-gray-200">Unity and brotherhood</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Media Section */}
+          <div className="bg-gradient-to-r from-green-600 to-red-600 rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">See More on Social Media</h3>
+            <p className="text-red-100 mb-6">
+              Follow us for daily updates, training videos, and behind-the-scenes content
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a 
+                href="https://www.facebook.com/warriorspirittaekwondoclub" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <span>📘</span>
+                <span>Facebook</span>
+              </a>
+              
+              <a 
+                href="https://www.instagram.com/warrior_martial_academy/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <span>📷</span>
+                <span>Instagram</span>
+              </a>
+              
+              <a 
+                href="https://tiktok.com/@warrior%20Spirit%20Taekwondo%20Club%20" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <span>🎵</span>
+                <span>TikTok</span>
+              </a>
+            </div>
+            
+            <div className="mt-6 text-red-100 text-sm">
+              <p>Stay connected with our martial arts community!</p>
             </div>
           </div>
         </div>
@@ -628,6 +732,7 @@ function App() {
                 <li><button onClick={() => scrollToSection('location')} className="hover:text-green-400 transition-colors">Location</button></li>
                 <li><button onClick={() => scrollToSection('schedule')} className="hover:text-green-400 transition-colors">Schedule</button></li>
                 <li><button onClick={() => scrollToSection('fees')} className="hover:text-green-400 transition-colors">Fees</button></li>
+                <li><button onClick={() => scrollToSection('gallery')} className="hover:text-green-400 transition-colors">Gallery</button></li>
                 <li><button onClick={() => scrollToSection('contact')} className="hover:text-green-400 transition-colors">Contact</button></li>
               </ul>
             </div>
