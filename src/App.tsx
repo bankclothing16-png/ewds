@@ -354,8 +354,8 @@ function App() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="font-semibold">Group Training</h3>
-                <p className="text-sm text-gray-200">Building strength together</p>
+                <h3 className="font-semibold">High Kicks</h3>
+                <p className="text-sm text-gray-200">Perfect your kicks</p>
               </div>
             </div>
 
