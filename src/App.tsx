@@ -393,8 +393,8 @@ function App() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="font-semibold">Community Event</h3>
-                <p className="text-sm text-gray-200">Celebrating achievements</p>
+                <h3 className="font-semibold">Writing exam</h3>
+                <p className="text-sm text-gray-200">Giving exam by writing</p>
               </div>
             </div>
 
