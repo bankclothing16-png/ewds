@@ -410,6 +410,48 @@ function App() {
                 <p className="text-sm text-gray-200">Demonstrating patterns</p>
               </div>
             </div>
+
+            {/* Image 8 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/542222479_750607237730388_1831950242748263835_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFbZwRomqpDJkJqSDYaL97oYSqYF4ASiYFhKpgXgBKJgXMY7_9aWkUfQudmPnCE4_VBafVdyRV5ps3S9iA5aSXU&_nc_ohc=E29wd2hOV2wQ7kNvwGdn48E&_nc_oc=Adl-C6hs1oWWZTyd-pN029aQVLK06dKzby7YGHgNcCjSj_6gaVte4POx6b9Vm72-ItE&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=GsKgKVpAAreBMdWauhjnKQ&oh=00_Afb1igPR4BVwdShjUs9EOBuykVHR_gW8Y7jkSz8zk_iXHA&oe=68CB3F48" 
+                alt="Championship Victory" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Championship Victory</h3>
+                <p className="text-sm text-gray-200">Championship Victory</p>
+              </div>
+            </div>
+
+            {/* Image 9 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t51.75761-15/491432670_17904714708112995_8130331405869906757_n.webp?stp=dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGkCB93izERIhLc2Ijyd6itYoYQ0nKUUgVihhDScpRSBRWGxUKST2KpixL8kfiwexyHlKiWkSDCKs89KU96RgZ_&_nc_ohc=8cNJwKSKPcAQ7kNvwHpQGD8&_nc_oc=AdmWj0hOul9qbk0ntcIsBldmYI2xhnkPoFdMrsC-gGnNBA4VenqFnpkZOW96_OG7et8&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=3J7vzRDMNpsBRMU8Ezeuyw&oh=00_Afbxc5kr4V4Ipn_5vSuGfMwMoyFYUn_sPCiFyhFfziWMkA&oe=68CB4DC4" 
+                alt="Sparring Practice" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Sparring Practice</h3>
+                <p className="text-sm text-gray-200">Sparring Practice</p>
+              </div>
+            </div>
+
+            {/* Image 10 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/484635170_619624187495361_9141252775134094245_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE_3KeKwyxCJ8Th8T8ZhiDDcviyntCzUdRy-LKe0LNR1BSKAX5ciCBUpE7too0pf3cmYO3jwE2eiIsTNjQ4OO-j&_nc_ohc=zqHqsuumPeIQ7kNvwHrzbEA&_nc_oc=Adm_zmjMcfFcRmdVCujDAe2criyXamO2RBX2APCUV6tszeS1sS1rF3mcjQ-dcv0R-hc&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=_OxD3J1-Mk3Ep6WkgAlwUw&oh=00_AfZzScwikNoAxYZ8N9z3fhFfx5XJYcJTL7t-fJ-JHAuV-Q&oe=68CB3065" 
+                alt="Team Achievement" 
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">Team Achievement</h3>
+                <p className="text-sm text-gray-200">Team Achievement</p>
+              </div>
+            </div>
           </div>
 
           {/* Social Media Section */}
