@@ -35,6 +35,7 @@ function App() {
                 <button onClick={() => scrollToSection('hero')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</button>
                 <button onClick={() => scrollToSection('location')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Location</button>
                 <button onClick={() => scrollToSection('schedule')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</button>
+                <button onClick={() => scrollToSection('fees')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Fees</button>
                 <button onClick={() => scrollToSection('coach')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Coach</button>
                 <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</button>
               </div>
@@ -59,6 +60,7 @@ function App() {
               <button onClick={() => scrollToSection('hero')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Home</button>
               <button onClick={() => scrollToSection('location')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Location</button>
               <button onClick={() => scrollToSection('schedule')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Schedule</button>
+              <button onClick={() => scrollToSection('fees')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Fees</button>
               <button onClick={() => scrollToSection('coach')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Coach</button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-green-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors">Contact</button>
             </div>
@@ -361,6 +363,182 @@ function App() {
         </div>
       </section>
 
+      {/* Fees Structure Section */}
+      <section id="fees" className="py-20 bg-gradient-to-br from-gray-900 via-black to-green-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Fees <span className="bg-gradient-to-r from-green-400 to-red-600 bg-clip-text text-transparent">Structure</span>
+            </h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              Affordable training packages designed to fit your budget and commitment level
+            </p>
+          </div>
+
+          {/* Admission Fee */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-gradient-to-r from-green-600 to-red-600 p-8 rounded-2xl shadow-2xl">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-white mb-4">Admission Fee</h3>
+                <div className="text-4xl font-bold text-white mb-2">NPR 5,000</div>
+                <p className="text-red-100">One-time registration fee</p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-white mb-4">What's Included:</h4>
+                  <ul className="space-y-3 text-red-100">
+                    <li className="flex items-center">
+                      <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+                      1 Complete Taekwondo Dress (Dobok)
+                    </li>
+                    <li className="flex items-center">
+                      <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+                      1 Club T-Shirt
+                    </li>
+                    <li className="flex items-center">
+                      <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+                      Official Club Membership
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="bg-yellow-500/20 backdrop-blur-sm rounded-xl p-6 border-2 border-yellow-400">
+                  <h4 className="text-lg font-semibold text-yellow-300 mb-4">🎉 Special Offer!</h4>
+                  <p className="text-white font-semibold mb-2">Festival Discount</p>
+                  <p className="text-yellow-100 text-sm">
+                    Join during any festival and get <span className="font-bold text-yellow-300">15% OFF</span> on Admission Fee!
+                  </p>
+                  <div className="mt-3 text-yellow-300 font-bold">
+                    Festival Price: NPR 4,250
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Training Packages */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Monthly Package */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-gray-600 hover:border-green-500 transition-all duration-300 transform hover:-translate-y-2">
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-white mb-2">Monthly</h3>
+                <div className="text-3xl font-bold text-green-400 mb-4">NPR 2,500</div>
+                <p className="text-gray-300 text-sm mb-6">Perfect for trying out</p>
+                <ul className="space-y-2 text-gray-300 text-sm mb-6">
+                  <li>✓ 30 days access</li>
+                  <li>✓ All regular classes</li>
+                  <li>✓ Basic training materials</li>
+                </ul>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+                >
+                  Choose Plan
+                </button>
+              </div>
+            </div>
+
+            {/* 3 Months Package */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-gray-600 hover:border-green-500 transition-all duration-300 transform hover:-translate-y-2">
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-white mb-2">3 Months</h3>
+                <div className="text-3xl font-bold text-green-400 mb-1">NPR 7,000</div>
+                <div className="text-sm text-gray-400 mb-4">Save NPR 500</div>
+                <p className="text-gray-300 text-sm mb-6">Great for beginners</p>
+                <ul className="space-y-2 text-gray-300 text-sm mb-6">
+                  <li>✓ 90 days access</li>
+                  <li>✓ All regular classes</li>
+                  <li>✓ Progress tracking</li>
+                  <li>✓ Belt testing eligible</li>
+                </ul>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+                >
+                  Choose Plan
+                </button>
+              </div>
+            </div>
+
+            {/* 6 Months Package */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-gray-600 hover:border-green-500 transition-all duration-300 transform hover:-translate-y-2">
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-white mb-2">6 Months</h3>
+                <div className="text-3xl font-bold text-green-400 mb-1">NPR 14,000</div>
+                <div className="text-sm text-gray-400 mb-4">Save NPR 1,000</div>
+                <p className="text-gray-300 text-sm mb-6">Serious commitment</p>
+                <ul className="space-y-2 text-gray-300 text-sm mb-6">
+                  <li>✓ 180 days access</li>
+                  <li>✓ All classes + workshops</li>
+                  <li>✓ Personal guidance</li>
+                  <li>✓ Competition preparation</li>
+                </ul>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+                >
+                  Choose Plan
+                </button>
+              </div>
+            </div>
+
+            {/* 1 Year Package - Best Value */}
+            <div className="bg-gradient-to-br from-green-600 to-red-600 rounded-2xl p-6 border-2 border-yellow-400 relative transform hover:-translate-y-2 transition-all duration-300 shadow-2xl">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="bg-yellow-400 text-black font-bold px-4 py-1 rounded-full text-sm">
+                  BEST VALUE
+                </span>
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-white mb-2">1 Year</h3>
+                <div className="text-3xl font-bold text-white mb-1">NPR 28,000</div>
+                <div className="text-sm text-yellow-200 mb-4">Save NPR 2,000</div>
+                <p className="text-red-100 text-sm mb-6">Maximum savings</p>
+                <ul className="space-y-2 text-red-100 text-sm mb-6">
+                  <li>✓ 365 days access</li>
+                  <li>✓ All classes + workshops</li>
+                  <li>✓ Personal training sessions</li>
+                  <li>✓ Competition team eligible</li>
+                  <li>✓ Free belt testing</li>
+                </ul>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full bg-white text-green-700 font-bold py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors"
+                >
+                  Choose Plan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Info */}
+          <div className="mt-16 text-center">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto">
+              <h4 className="text-lg font-semibold text-white mb-4">Payment Information</h4>
+              <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-300">
+                <div>
+                  <p className="font-semibold text-green-400 mb-2">Payment Methods:</p>
+                  <ul className="space-y-1">
+                    <li>• Cash Payment</li>
+                    <li>• Bank Transfer</li>
+                    <li>• Mobile Banking</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-semibold text-green-400 mb-2">Additional Benefits:</p>
+                  <ul className="space-y-1">
+                    <li>• Free trial class</li>
+                    <li>• Flexible scheduling</li>
+                    <li>• Family discounts available</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-br from-black via-gray-900 to-green-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -449,6 +627,7 @@ function App() {
                 <li><button onClick={() => scrollToSection('hero')} className="hover:text-green-400 transition-colors">Home</button></li>
                 <li><button onClick={() => scrollToSection('location')} className="hover:text-green-400 transition-colors">Location</button></li>
                 <li><button onClick={() => scrollToSection('schedule')} className="hover:text-green-400 transition-colors">Schedule</button></li>
+                <li><button onClick={() => scrollToSection('fees')} className="hover:text-green-400 transition-colors">Fees</button></li>
                 <li><button onClick={() => scrollToSection('contact')} className="hover:text-green-400 transition-colors">Contact</button></li>
               </ul>
             </div>
